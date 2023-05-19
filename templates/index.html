@@ -1,0 +1,330 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Title and Description Rating and Rewriting</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Airbnb Title and Description Rating and Rewriting</h1>
+    <form id="input_form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result" style="display:none;">
+        <h2>Results:</h2>
+        <p><strong>Title Rating:</strong> <span id="title_rating"></span></p>
+        <p><strong>Description Rating:</strong> <span id="description_rating"></span></p>
+        <p><strong>Rewritten Title:</strong> <span id="title_rewrite"></span></p>
+        <p><strong>Rewritten Description:</strong> <span id="description_rewrite"></span></p>
+        <button id="retry">Retry</button>
+    </div>
+
+    <script>
+        $("#input_form").submit(function(event) {
+            event.preventDefault();
+            var form_data = $(this).serialize();
+            $.post("/rate_and_rewrite", form_data, function(data) {
+                $("#title_rating").text(data.title_rating);
+                $("#description_rating").text(data.description_rating);
+                $("#title_rewrite").text(data.title_rewrite);
+                $("#description_rewrite").text(data.description_rewrite);
+                $("#result").show();
+            });
+        });
+
+        $("#retry").click(function() {
+            $("#input_form").submit();
+        });
+    </script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Title and Description Rating and Rewriting</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #484848;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #FF5A5F;
+            color: #ffffff;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        form {
+            margin-bottom: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #FF5A5F;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #FF7A85;
+        }
+
+        #result {
+            margin-bottom: 40px;
+        }
+
+        #result p {
+            margin-bottom: 10px;
+        }
+
+        #result strong {
+            color: #FF5A5F;
+        }
+
+        #retry {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Airbnb Title and Description Rating and Rewriting</h1>
+    <form id="input_form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result" style="display:none;">
+        <h2>Results:</h2>
+        <p><strong>Title Rating:</strong> <span id="title_rating"></span></p>
+        <p><strong>Description Rating:</strong> <span id="description_rating"></span></p>
+        <p><strong>Rewritten Title:</strong> <span id="title_rewrite"></span></p>
+        <p><strong>Rewritten Description:</strong> <span id="description_rewrite"></span></p>
+        <button id="retry">Retry</button>
+    </div>
+
+    <script>
+        $("#input_form").submit(function(event) {
+            event.preventDefault();
+            var form_data = $(this).serialize();
+            $.post("/rate_and_rewrite", form_data, function(data) {
+                $("#title_rating").text(data.title_rating);
+                $("#description_rating").text(data.description_rating);
+                $("#title_rewrite").text(data.title_rewrite);
+                $("#description_rewrite").text(data.description_rewrite);
+                $("#result").show();
+            });
+        });
+
+        $("#retry").click(function() {
+            $("#input_form").submit();
+        });
+    </script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Title and Description Rating and Rewriting</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Light mode */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #484848;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #FF5A5F;
+            color: #ffffff;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        form {
+            margin-bottom: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #FF5A5F;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #FF7A85;
+        }
+
+        #result {
+            margin-bottom: 40px;
+        }
+
+        #result p {
+            margin-bottom: 10px;
+        }
+
+        #result strong {
+            color: #FF5A5F;
+        }
+
+        #retry {
+            margin-top: 20px;
+        }
+
+        /* Dark mode */
+        body.dark-mode {
+            background-color: #484848;
+            color: #ffffff;
+        }
+
+        body.dark-mode h1 {
+            background-color: #ffffff;
+            color: #484848;
+        }
+
+        body.dark-mode input[type="text"], body.dark-mode textarea {
+            background-color: #ffffff;
+            color: #484848;
+            border: 1px solid #ccc;
+        }
+
+        body.dark-mode button {
+            background-color: #ffffff;
+            color: #484848;
+        }
+
+        body.dark-mode button:hover {
+            background-color: #f2f2f2;
+        }
+
+        /* Padding and margin */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Airbnb Title and Description Rating and Rewriting</h1>
+        <form id="input_form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result" style="display:none;">
+            <h2>Results:</h2>
+            <p><strong>Title Rating:</strong> <span id="title_rating"></span></p>
+            <p><strong>Description Rating:</strong> <span id="description_rating"></span></p>
+            <p><strong>Rewritten Title:</strong> <span id="title_rewrite"></span></p>
+            <p><strong>Rewritten Description:</strong> <span id="description_rewrite"></span></p>
+            <button id="retry">Retry</button>
+        </div>
+        <button id="mode-toggle">Toggle Dark Mode</button>
+    </div>
+
+    <script>
+        $("#input_form").submit(function(event) {
+            event.preventDefault();
+            var form_data = $(this).serialize();
+            $.post("/rate_and_rewrite", form_data, function(data) {
+                $("#title_rating").text(data.title_rating);
+                $("#description_rating").text(data.description_rating);
+                $("#title_rewrite").text(data.title_rewrite);
+                $("#description_rewrite").text(data.description_rewrite);
+                $("#result").show();
+            });
+        });
+
+        $("#retry").click(function() {
+            $("#input_form").submit();
+        });
+
+        $("#mode-toggle").click(function() {
+            $("body").toggleClass("dark-mode");
+        });
+    </script>
+</body>
+</html>
+
